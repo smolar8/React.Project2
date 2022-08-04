@@ -8,7 +8,6 @@ export const Form = ({ currencies, setResult }) => {
     event.preventDefault();
     const result = amount * currencySelected;
     setResult(result.toFixed(2));
-    setResult(amount * currencySelected);
   };
 
   return (
