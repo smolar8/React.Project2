@@ -28,8 +28,10 @@ export const Form = ({ currencies, setResult }) => {
         <option disabled value="">
           wybierz walutę
         </option>
-        {currencies.map((item) => (
-          <option value={item.mid}>{item.code}</option>
+        {currencies.map((item, index) => (
+          <option value={item.mid} key={index}>
+            {item.code}
+          </option>
         ))}
       </select>
       <input type="submit" value="convert" />
